@@ -23,11 +23,15 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.android_cookie_image_view);
         imageView.setImageResource(R.drawable.after_cookie);
 // Find a reference to the TextView in the layout. Change the text.
-        TextView textView = (TextView) findViewById(R.id.status_text_view);
-        textView.setText("I'm so full");
+        displayMessage("I'm so full");
     }
 
 
-        // TODO: Find a reference to the TextView in the layout. Change the text.
+    // TODO: Find a reference to the TextView in the layout. Change the text.
 
+    private void displayMessage(String message) {
+        TextView status_text_view = (TextView) findViewById(R.id.status_text_view);
+        status_text_view.setText(message);
     }
+
+}
